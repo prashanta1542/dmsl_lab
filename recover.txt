@@ -1,0 +1,33 @@
+DROP TABLE courses, departments , students
+CREATE TABLE departments (
+  dept_name VARCHAR(50) NOT NULL,
+  contact VARCHAR(50) NOT NULL,
+  building VARCHAR(50) NOT NULL,
+  PRIMARY KEY (dept_name)
+);
+CREATE TABLE students (
+  student_id INT NOT NULL AUTO_INCREMENT,
+  student_name VARCHAR(50) NOT NULL,
+  image VARCHAR(50) NOT NULL,
+  department VARCHAR(50) NOT NULL,
+  PRIMARY KEY (student_id),
+  FOREIGN KEY (department) REFERENCES departments(dept_name)
+);
+CREATE TABLE courses(
+    course_code VARCHAR(100) NOT NULL,
+    course_name VARCHAR(100) NOT NULL,
+    course_credit VARCHAR(100) NOT NULL,
+    course_type VARCHAR(100) NOT NULL,
+    department VARCHAR(100) NOT NULL,
+    PRIMARY KEY (course_code),
+    FOREIGN KEY (department) REFERENCES departments(dept_name)
+    );
+CREATE TABLE admin(
+    id int not null ,
+    name varchar(100) not null,
+    email varchar(100) not null,
+    password varchar(100) not null,
+    primary key (id)
+)
+
+INSERT INTO admin VALUES(111,'Prashanta Chowdhury','prashantachowdhury967@gmail.com','123456');

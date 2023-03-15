@@ -1,0 +1,33 @@
+.navbar-brand , .nav-link  {
+    color: rgb(53, 250, 19);
+}
+.background-color{
+    background-color: rgba(249, 117, 84, 0.9);
+}
+.background-color-vertical{
+    background-color:cadetblue;
+}
+.background-color-middle-nav{
+    background-color:blueviolet;
+}
+.background-color-middle-nav .nav-link:hover{
+    color:white;
+}
+.features .row{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #87e9c3;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the height of the footer */
+    background-color: #f5f5f5;
+  }
+
+.register-margin{
+    margin:0 auto;
+}
